@@ -1,0 +1,263 @@
+body {
+    background-color: #fff7d6;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+h1 {
+    color: #1F509A;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #112f5b;
+}
+
+/* Styling untuk navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important; /* Membuat navbar transparan */
+    z-index: 10; /* Memastikan navbar berada di atas gambar */
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ff6200 !important; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    transition: all 0.4s ease-out;
+    color: #b65b0c !important; 
+}
+
+.card-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 20px auto; /* Memberi margin otomatis */
+    max-width: 1500px; /* Membatasi lebar box */
+    border: 2px solid #ddd; /* Border untuk box */
+    border-radius: 10px; /* Membuat sudut lebih melengkung */
+}
+
+.nav-link.logout {
+    color: rgb(229, 0, 0) !important;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-link.logout:hover {
+    color: rgb(117, 0, 0) !important;
+}
+
+.btn-primary {
+    background-color: #fc6100 !important; 
+    border-color: #fc6100 !important;
+}
+
+.btn-primary:hover {
+    background-color: #772f03 !important;
+    border-color: #772f03 !important;
+}
+
+#recipeList {
+    margin-top: 20px;
+}
+
+#recipeList li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#recipeList li:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 3rem;
+    float: left;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.detail-image {
+    width: 100%;     
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #772f03;
+}
+
+.full-screen-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjaga agar gambar tidak terdistorsi */
+    z-index: -1; /* Memastikan gambar berada di belakang konten lainnya */
+}
+
+/* Container search bar */
+.search-bar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input search */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Navbar styles (optional, for adjustments if needed) */
+.navbar {
+    position: relative;
+    z-index: 1; /* Memastikan navbar tetap di atas gambar */
+}
+
+#resultContainer {
+    position: absolute; /* Memastikan konten berada di posisi tertentu */
+    top: 60%; /* Menempatkan di bawah search bar */
+    left: 50%;
+    transform: translateX(-50%); /* Mengatur konten agar terpusat */
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    transition: background-color 0.1s ease;
+    z-index: 2; /* Menampilkan di depan gambar */
+}
+
+#resultContainer.loaded {
+    background-color: rgba(255, 255, 255, 0.8); /* Background color when content is loaded */
+}
+
+.form-check-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.form-check-label {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Container login form */
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar styles (optional, for adjustments if needed) */
+.navbar {
+    position: relative;
+    z-index: 1; /* Memastikan navbar tetap di atas gambar */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
